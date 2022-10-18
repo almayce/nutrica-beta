@@ -1,6 +1,6 @@
 package data.input
 
-enum class Analyse {
+enum class Analyse : Analysable {
 
     INSPECTION,
     BLOOD_COMMON,
@@ -9,4 +9,8 @@ enum class Analyse {
     URINE_ORGANIC_ACIDS,
     STOOL_SAMPLE,
     GASTROINTESTINAL_TRACT,
+
+    PROTEIN_COMMON,
+    FERRITIN,
+    FOLIE_ACID,
 }

@@ -1,6 +1,9 @@
-package data
+package data.nutraceutical
 
-enum class HealthyNutrition(vararg comment: String) {
+import data.input.State
+import data.input.Symptom
+
+enum class HealthyNutrition(vararg comment: String) : Nutraceutical {
 
     WARM_WATER("temperature 40", "not too cold", "not more then 80 (dead water)", "without added minerals", "ph 7.5 - 9.0", "kg * 0.03 = liters"),
 
@@ -14,5 +17,7 @@ enum class HealthyNutrition(vararg comment: String) {
     RED_MEAT("purines"),
     LIVER,
 
-    VARIETY()
+    VARIETY(),
+
+    APPLE_VINEGAR(),
 }

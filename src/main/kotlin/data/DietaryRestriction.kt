@@ -1,6 +1,7 @@
 package data
 
-import data.Micronutrient.*
+import data.nutraceutical.Micronutrient
+import data.nutraceutical.Micronutrient.*
 
 enum class DietaryRestriction(val macronutrient: Map<Micronutrient, Double>, vararg comment: String) {
 
@@ -11,7 +12,13 @@ enum class DietaryRestriction(val macronutrient: Map<Micronutrient, Double>, var
     LACTOSE(mapOf()),
     CASEIN(mapOf(), "a1 -> betacasiomorphine 7"),
     CEREALS(mapOf()),
-    COFFEE(mapOf(), "уменьшает жировой гипотоз печени", "вымывает витамин б12"),
+    COFFEE(
+        mapOf(),
+        "уменьшает жировой гипотоз печени",
+        "вымывает витамин б12",
+        "желчегонный эффект",
+        "ускорение перистатики"
+    ),
 
     CHICKEN(
         mapOf(

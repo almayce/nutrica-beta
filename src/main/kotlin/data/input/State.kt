@@ -2,19 +2,21 @@ package data.input
 
 import data.DietaryRestriction
 import data.DietaryRestriction.*
-import data.HealthyNutrition
-import data.HealthyNutrition.*
 import data.input.Analyse.*
 import data.input.AnalyseResult.*
 import data.input.Feeling.*
-import data.input.Inspection.EXPECTORATION_OF_MUCUS
-import data.input.Inspection.PALE_SKIN
+import data.input.Inspection.*
+import data.nutraceutical.FoodSuppliement.BETAIN
+import data.nutraceutical.FoodSuppliement.PEPSIN
+import data.nutraceutical.HealthyNutrition.*
+import data.nutraceutical.Micronutrient.*
+import data.nutraceutical.Nutraceutical
 
 enum class State(
     val symptoms: List<Symptom>,
     val dietaryRestrictions: List<DietaryRestriction>,
-    val healthyNutrition: List<HealthyNutrition>,
-    val analyses: List<Analyse>
+    val healthyNutrition: List<Nutraceutical>,
+    val analyses: List<Analysable>
 ) : Symptom {
 
     LOW_B12(
@@ -52,5 +54,25 @@ enum class State(
         dietaryRestrictions = listOf(SUGAR, CEREALS),
         healthyNutrition = listOf(WARM_WATER, GREEN_ONION, GARLIC, KALE, PARSLEY, SORREL, SPINACH, VARIETY),
         analyses = listOf(BLOOD_COMMON, URINE_COMMON)
+    ),
+    LOW_IRON(
+        symptoms = listOf(
+            WEAKNESS,
+            DIZZINESS,
+            GRAY_HAIR,
+            PIGMENTATION,
+            DRY_SKIN,
+            DYSPNOEA,
+            WOUND_LIP,
+            IRRITABILITY,
+            DEPRESSION,
+            HYPOTHYROIDISM,
+            NAILS_DEFORMATION
+        ),
+        dietaryRestrictions = listOf(),
+        healthyNutrition = listOf(
+            APPLE_VINEGAR, BETAIN, PEPSIN, IRON, C, MINERALS, B, D
+        ),
+        analyses = listOf(BLOOD_COMMON, PROTEIN_COMMON, FERRITIN, FOLIE_ACID, BLOOD_B12, D, COPPER, ZINK)
     )
 }
