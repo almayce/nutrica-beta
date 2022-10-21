@@ -1,9 +1,10 @@
 package data.input
 
-enum class Inspection() : Symptom {
+enum class Inspection(vararg comment: String) : Symptom {
 
     PALE_SKIN(),
     EXPECTORATION_OF_MUCUS(),
     GRAY_HAIR(),
-    PIGMENTATION()
+    PIGMENTATION(),
+    INFLAMMATION("воспаления ведут к обр. рак-х опухолей")
 }

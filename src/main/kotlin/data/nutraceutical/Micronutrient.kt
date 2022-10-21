@@ -2,8 +2,9 @@ package data.nutraceutical
 
 import data.input.Analysable
 import data.nutraceutical.Nutraceutical
+import data.parameters.Countable
 
-enum class Micronutrient(vararg comment: String) : Nutraceutical, Analysable {
+enum class Micronutrient(vararg comment: String) : Nutraceutical, Analysable, Countable {
 
     C("водорастворимый"),
     B("водорастворимый"),

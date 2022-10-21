@@ -1,17 +1,19 @@
-package data
+package data.output.restriction
 
-import data.nutraceutical.Micronutrient
 import data.nutraceutical.Micronutrient.*
+import data.parameters.Countable
 
-enum class DietaryRestriction(val macronutrient: Map<Micronutrient, Double>, vararg comment: String) {
+enum class DietaryRestriction(val micronutrient: Map<Countable, Double>, vararg comment: String) : Restriction {
 
-    SUGAR(mapOf(), "all kinds"),
     CARBS(mapOf(), "exclude plant fiber"),
     GLUTEN(mapOf()),
     YEAST(mapOf()),
     LACTOSE(mapOf()),
     CASEIN(mapOf(), "a1 -> betacasiomorphine 7"),
     CEREALS(mapOf()),
+    SUGAR(mapOf()),
+    WHITE_BREAD(mapOf()),
+
     COFFEE(
         mapOf(),
         "уменьшает жировой гипотоз печени",
