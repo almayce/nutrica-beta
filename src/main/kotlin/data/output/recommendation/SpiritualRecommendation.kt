@@ -5,5 +5,7 @@ enum class SpiritualRecommendation : Recommendation {
     SILENCE_UNTIL_EATING,
     MEDITATION,
     DIARY,
-    FAITH
+    FAITH,
+    ABSTENTION,
+    ASCETICISM
 }

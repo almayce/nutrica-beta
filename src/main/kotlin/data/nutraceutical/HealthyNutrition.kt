@@ -20,4 +20,7 @@ enum class HealthyNutrition(vararg comment: String) : Nutraceutical {
     VARIETY(),
 
     APPLE_VINEGAR(),
+
+    WHOLE_GRAIN(),
+    BEANS()
 }
