@@ -1,22 +1,14 @@
 package data.input
 
 import data.output.restriction.DietaryRestriction.*
-import data.input.Analyse.*
-import data.input.AnalyseResult.*
-import data.input.Feeling.*
-import data.input.Inspection.*
 import data.nutraceutical.FoodSuppliement.BETAIN
 import data.nutraceutical.FoodSuppliement.PEPSIN
-import data.nutraceutical.HealthyNutrition.*
 import data.nutraceutical.Micronutrient.*
 import data.nutraceutical.Nutraceutical
-import data.output.recommendation.MacronutrientRecommendation
 import data.output.recommendation.MacronutrientRecommendation.COMPLEX_CARBS
 import data.output.recommendation.MacronutrientRecommendation.PROTEIN_WITH_FATS_AND_FIBER
 import data.output.recommendation.Recommendation
-import data.output.recommendation.RoutineRecommendation
 import data.output.recommendation.RoutineRecommendation.*
-import data.output.restriction.MacronutrientRestriction
 import data.output.restriction.MacronutrientRestriction.*
 import data.output.restriction.Restriction
 
