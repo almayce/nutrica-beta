@@ -1,16 +1,12 @@
 package data.input
 
-import data.output.restriction.DietaryRestriction.*
 import data.nutraceutical.FoodSuppliement.BETAIN
 import data.nutraceutical.FoodSuppliement.PEPSIN
 import data.nutraceutical.Micronutrient.*
 import data.nutraceutical.Nutraceutical
 import data.output.recommendation.MacronutrientRecommendation.COMPLEX_CARBS
 import data.output.recommendation.MacronutrientRecommendation.PROTEIN_WITH_FATS_AND_FIBER
-import data.output.recommendation.Recommendation
-import data.output.recommendation.RoutineRecommendation.*
 import data.output.restriction.MacronutrientRestriction.*
-import data.output.restriction.Restriction
 
 enum class State(
     val symptoms: List<Symptom>,
